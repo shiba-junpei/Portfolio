@@ -6,7 +6,7 @@
 <br>
 
 ## サイト画像
-
+<img width="1440" alt="スクリーンショット 2021-08-31 15 03 26" src="https://user-images.githubusercontent.com/81362190/131451853-9d4f7469-4d1c-4a61-937b-45370c86042c.png">
 <br>
 
 ## 主な機能
