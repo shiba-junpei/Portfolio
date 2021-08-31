@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/* 共通スタイル */
+body {
+    font-size: 16px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+main h1 {
+    margin-top: 120px;
+    text-align:center;
+}
+h2 {
+    font-size: 30px;
+}
+.visual {
+    width : 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+}
+.header-logo {
+    margin-left: 30px;
+}
+header nav {
+    margin: 0 0 0 auto;
+}
+header nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li a:hover {
+    color: #d88d2b;
+}
+
+/* index.html */
+/* concept */
+.concept {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.concept-img img {
+    display: block;
+    width: 450px;
+    height: 400px;
+    margin: 60px 100px 0 0;
+}
+.concept h2 {
+    margin-top: 60px;
+}
+.concept-text  p {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+/* menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-ul {
+    display: block;
+    margin-top: 60px;
+}
+.menu-li {
+line-height: 1.8;
+white-space: nowrap;
+}
+.btn {
+    width : 300px;
+    height: 60px;
+    margin-top: 15px;
+}
+.btn a {
+	display : block;
+	padding : 15px;
+	text-align : center;
+	background : #fff;
+    border: solid 1px #000;
+    color: #000;
+    text-decoration: none;
+}
+.btn a:hover {
+    color : #ffffff;
+	background : #000;
+}
+.menu-img img {
+    display: block;
+    width: 450px;
+    height: 380px;
+    margin: 60px 0 0 100px;
+}
+
+/* information */
+.information h1 {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    text-align:center;
+}
+.news-list {
+    margin-top: 30px;
+	display : flex;
+	margin-bottom : 20px;
+	padding-bottom : 20px;
+	border-bottom : 1px solid #000;
+}
+.news-list dt {
+	margin-right : 60px;
+	color : #000;
+}
+.more {
+    text-align: right;
+}
+.more a {
+    color: #000;
+    text-decoration: none;
+}
+.more a:hover {
+    color: #d88d2b;
+}
+
+/* menu.html */
+.block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.item-card h2{
+    text-align: center;
+}
+.item-card img{
+    width: 300px;
+    height: 250px;
+    margin-top: 30px;
+}
+.item-list  {
+    margin-top: 30px;
+	display : flex;
+	padding-bottom : 10px;
+	border-bottom : 1px solid #000;
+}
+.item-list dt {
+	margin-right : auto;
+	color : #000;
+}
+
+/* staff.html */
+.item-list-staff  {
+    margin-top: 30px;
+	display : flex;
+	padding-bottom : 10px;
+    width: 300px;
+}
+.img-non {
+    visibility:hidden
+}
+
+/* information.html */
+.information-title {
+    margin-top: 120px;
+    text-align:center;
+    margin-bottom: 80px;
+}
+.news-list-in {
+    margin-top: 30px;
+	display : flex;
+	margin-bottom : 50px;
+	padding-bottom : 20px;
+	border-bottom : 1px solid #000;
+}
+.news-list-in dt {
+	margin-right : 60px;
+	color : #000;
+}
+
+/* access.html */
+.visual-access{
+    width: 800px;
+    margin: 0 auto;
+}
+.map {
+    margin-top: 80px;
+    text-align: center;
+}
+.access-text {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+.access-text p{
+    margin-left: 120px;
+}
+
+/* footer */
+footer .footer {
+    display: flex;
+    margin-top : 120px;
+	padding : 60px 0 20px;
+    border-top: solid 1px #000;
+}
+footer .footer-inner {
+    margin-left: 50px;
+}
+footer .footer-address-text {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+footer .footer-nav {
+    display: flex;
+    margin-left: auto;
+}
+footer .footer-nav-list {
+    margin-right: 100px;
+}
+footer .footer-nav-list li{
+    margin-bottom: 30px;
+}
+footer nav ul li a,
+footer nav ul li a:link,
+footer nav ul li a:visited {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+footer nav ul li a:hover {
+    color: #d88d2b;
+}
+.copylight{
+	text-align : center;
+}
+
+/* スマホ */
+@media screen and (max-width: 950px) {
+/* スマホ共通 */
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    body {
+        font-size: 14px;
+    }
+
+/* header */
+    header {
+        width: 100%;
+        height: 70px;
+        flex-direction: column;
+    }
+    .header-logo {
+        margin: 5px auto 0;
+    }
+    .header-logo img{
+        height: 30px;
+    }
+    header nav {
+        margin: 0 auto;
+    }
+    header nav ul {
+        list-style: none;
+        align-items: center;
+        display: flex;
+    }
+    header nav ul li a,
+    header nav ul li a:link,
+    header nav ul li a:visited {
+        display: block;
+        padding: 0px 8px;
+        text-decoration: none;
+        color: #000;
+    }
+
+/* main */
+    main h1 {
+        margin-top: 25px;
+    }
+    .concept {
+        flex-direction: column;
+    }
+    .concept-img img {
+        margin-top: 25px;
+        width: 100%;
+        height: 150px;
+    }
+    .concept h2 {
+        margin-top: 20px;
+    }
+    .concept-text {
+        margin-top: 20px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: initial;
+    }
+    .menu-ul{
+        margin-top: 20px;
+    }
+    .menu-img{
+        display: none;
+    }
+    .btn {
+        width : 200px;
+        height: 20px;
+        margin: 10px auto 0;
+    }
+    .btn a {
+        display : block;
+        padding: 5px;
+        text-align : center;
+        background : #fff;
+        border: solid 1px #000;
+        color: #000;
+        text-decoration: none;
+    }
+    .information h1 {
+        margin: 40px 0 25px 0;
+    }
+    .news-list {
+        margin-top: 20px;
+        margin-bottom : 10px;
+        padding-bottom : 10px;
+    }
+
+/* menu.html */
+.sp-h1{
+    margin-top: 100px;
+}
+.block {
+    flex-direction: column;
+    margin-top: 0px;
+    }
+.item-card h2{
+    margin-top: 20px;
+    }
+.item-card img{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    }
+
+/* staff.html */
+.item-list-staff{
+    margin: 10px 0 0 0;
+    }
+.item-card-non {
+    flex-direction: column;
+    }
+
+/* information.html */
+.information-title {
+    margin-top: 100px;
+    text-align:center;
+    margin-bottom: 25px;
+    }
+.news-list-in {
+    margin-bottom : 10px;
+    padding-bottom : 10px;
+}
+
+/* access.html */
+.visual-access{
+    width: 96%;
+    }
+.map {
+    margin-top: 25px;
+    }
+.access-text {
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 1.8;
+    }
+.access-text address {
+    margin-left: -150px;
+    }
+.access-text p {
+    margin-left: -110px;
+    margin-top: 15px;
+    }
+
+/* footer */
+    footer .footer {
+    display: flex;
+    margin-top : 50px;
+	padding : 40px 0 0px;
+    border-top: solid 1px #000;
+    }
+    footer .footer-inner {
+        margin-left: auto;
+    }
+    .footer-logo img{
+        width: 80px;
+        height: 40px;
+    }
+    footer address {
+        margin-top: 10px;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+    footer .footer-nav {
+        display: flex;
+        margin-left: auto;
+    }
+    footer .footer-nav-list {
+        margin:0 15px 0 auto;
+    }
+    footer .footer-nav-list li{
+        margin-bottom: 30px;
+    }
+    footer nav ul li a,
+    footer nav ul li a:link,
+    footer nav ul li a:visited {
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+    footer nav ul li a:hover {
+        color: #d88d2b;
+    }
+    .copylight{
+        text-align : center;
+    }
+}

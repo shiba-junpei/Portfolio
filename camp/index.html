@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="松山市で一番品揃えがいいキャンプのお店。初心者から上級者まで、お探しの品が必ず見るかる！">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CAMPnavi</title>
+</head>
+<body>
+  <header class="header">
+    <div class="flex is-between is-center">
+      <div class="header-left">
+        <h1 class="header-seo">松山市で一番品揃がいいキャンプのお店</h1>
+        <p class="header-logo"><img src="img/logo1.jpg" width="165" alt="CAMPnavi"></p>
+      </div>
+      <div class="header-right">
+        <p class="header-tel">TEL：000-0000-0000</p>
+        <address class="header-address">住所：愛媛県松山市空港通６−１−８</address>
+      </div>
+    </div>
+    <div id="js-gnavbtn" class="gnavbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="gnav">
+      <ul class="flex">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="item.html">商品一覧</a></li>
+        <li><a href="notice.html">お知らせ</a></li>
+        <li><a href="qa.html">よくある質問</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="sp-tel sp"><a href="tel:06-0000-0000">クリックして電話をかける</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mv"><img src="img/main1.jpg" width="100%" alt=""></div>
+  <section class="item-wrap main-section-wrap">
+    <h2 class="item-section-title"><span>items</span>商品一覧</h2>
+    <div class="flex is-between item-content">
+      <section class="item-list">
+        <p><img src="img/items1.jpg" alt=""></p>
+        <h3 class="item-list-title">テント</h3>
+        <p>実際に見たいお客様へ向けて、店舗横でテントを展示しています。
+            <br>取り扱いブランドであれば、ご要望に合わせたテントの展示や講習もご来店予約で承っております。</p>
+      </section>
+      <section class="item-list">
+        <p><img src="img/items2.jpg" alt=""></p>
+        <h3 class="item-list-title">寝袋</h3>
+        <p>キャンプで布団の役割を果たす寝袋。
+            <br>温かさや使い方、機能を考慮したさまざまなデザインのものがあります。</p>
+      </section>
+      <section class="item-list">
+        <p><img src="img/items3.jpg" alt=""></p>
+        <h3 class="item-list-title">グリル</h3>
+        <p>デザインも、機能性も個性豊かなコンロをご用意しております。ソロキャンプ、ファミリー、ロースタイル、卓上バーベキューなど、用途に合わせて最適な1台を選びましょう。</p>
+      </section>
+    </div>
+      <p class="main-btn"><a href="item.html">商品一覧へ</a></p>
+  </section>
+  <section class="news-wrap">
+    <h2 class="item-section-title"><span>news</span>お知らせ</h2>
+    <dl class="news-list">
+      <dt>2021.8.4</dt>
+      <dd><a href="notice.html">最新のテントを入荷しました。</a></dd>
+    </dl>
+    <dl class="news-list">
+      <dt>2021.7.1</dt>
+      <dd><a href="notice.html">営業時間の変更について。</a></dd>
+    </dl>
+    <dl class="news-list">
+      <dt>2021.5.1</dt>
+      <dd><a href="notice.html">ゴールデンウィーク期間中の営業について。</a></dd>
+    </dl>
+    <p class="main-btn"><a href="notice.html">お知らせ一覧へ</a></p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner flex">
+      <div class="footer-address">
+        <p class="footer-logo">CAMPnavi</p>
+        <p class="footer-tel">TEL：000-0000-0000</p>
+        <address>住所：愛媛県松山市空港通６−１−８</address>
+      </div>
+      <nav class="footer-nav flex">
+        <ul class="footer-nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="item.html">商品一覧</a></li>
+          <li><a href="notice.html">お知らせ</a></li>
+        </ul>
+        <ul class="footer-nav-list">
+          <li><a href="qa.html">よくある質問</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copylight"><small>copylight©CAMPnavi</small></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+  $(function() {
+    $("#js-gnavbtn").click(function() {
+    $('body').toggleClass("show");
+    });
+  });
+  </script>
+</body>
+</html>

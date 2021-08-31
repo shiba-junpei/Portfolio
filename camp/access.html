@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>アクセス</title>
+</head>
+<body>
+  <header class="header">
+    <div class="flex is-between is-center">
+      <div class="header-left">
+        <h1 class="header-seo">松山市で一番品揃がいいキャンプのお店</h1>
+        <p class="header-logo"><img src="img/logo1.jpg" width="165" alt="CAMPnavi"></p>
+      </div>
+      <div class="header-right">
+        <p class="header-tel">TEL：000-0000-0000</p>
+        <address class="header-address">住所：愛媛県松山市空港通６−１−８</address>
+      </div>
+    </div>
+    <div id="js-gnavbtn" class="gnavbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="gnav">
+      <ul class="flex">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="item.html">商品一覧</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="qa.html">よくある質問</a></li>
+        <li class="active"><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li class="sp-tel sp"><a href="tel:000-0000-0000">クリックして電話をかける</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mv"><img src="img/page-thum01.jpg" width="100%" alt=""></div>
+  <main class="access-wrap">
+    <h2 class="item-section-title"><span>access</span>アクセス</h2>
+    <table class="table-style">
+      <tr>
+        <th>会社名</th>
+        <td>CAMPnavi</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒791-0054　愛媛県松山市空港通６−１−８</td>
+      </tr>
+      <tr>
+        <th>アクセス</th>
+        <td>伊予鉄「余戸駅」下車徒歩15分<br>JR 松山駅より車で15分</dd></td>
+      </tr>
+    </table>
+  </main>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.485473069983!2d132.72960006519662!3d33.825588780668234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fefbe74bbe749%3A0x87dea8b9a38e2eb7!2z44CSNzkxLTAwNTQg5oSb5aqb55yM5p2-5bGx5biC56m65riv6YCa77yW5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1628405284770!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+  <footer class="footer">
+    <div class="footer-inner flex">
+      <div class="footer-address">
+        <p class="footer-logo">CAMPnavi</p>
+        <p class="footer-tel">TEL：000-0000-0000</p>
+        <address>住所：愛媛県松山市空港通６−１−８</address>
+      </div>
+      <nav class="footer-nav flex">
+        <ul class="footer-nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="item.html">商品一覧</a></li>
+          <li><a href="notice.html">お知らせ</a></li>
+        </ul>
+        <ul class="footer-nav-list">
+          <li><a href="qa.html">よくある質問</a></li>
+          <li><a href="access.html">アクセス</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copylight"><small>copylight@CAMPnavi</small></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+  $(function() {
+    $("#js-gnavbtn").click(function() {
+    $('body').toggleClass("show");
+    });
+  });
+  </script>
+</body>
+</html>
