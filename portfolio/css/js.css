@@ -71,7 +71,7 @@ header{
 /*アニメーション前の指定*/
 #mask path {
         fill-opacity: 0;
-        transition: fill-opacity 5s;
+        transition: fill-opacity .2s;
         fill: none;
         stroke: #333;
     }
