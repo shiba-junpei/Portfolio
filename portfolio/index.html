@@ -202,12 +202,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
 <script src="js/4-1-5.js"></script>
 <script>
-    //SVGアニメーションの描画
+//SVGアニメーションの描画
 var stroke;
 stroke = new Vivus('mask', {//アニメーションをするIDの指定
     start:'manual',//自動再生をせずスタートをマニュアルに
     type: 'scenario-sync',// アニメーションのタイプを設定
-    duration: 15,//アニメーションの時間設定。数字が小さくなるほど速い
+    duration: 15,//アニメーションの時間設定。
     forceRender: false,//パスが更新された場合に再レンダリングさせない
     animTimingFunction:Vivus.EASE,//動きの加速減速設定
 },
@@ -217,8 +217,8 @@ function(){
 );
 
 $(window).on('load',function(){
-    $("#splash").delay(8000).fadeOut('slow');//ローディング画面を3秒（3000ms）待機してからフェイドアウト
-	$("#splash_logo").delay(9000).fadeOut('slow');//ロゴを3秒（3000ms）待機してからフェイドアウト
+    $("#splash").delay(8000).fadeOut('slow');//ローディング画面のフェイドアウト設定
+	$("#splash_logo").delay(9000).fadeOut('slow');//ロゴをn秒待機してからフェイドアウト
         stroke.play();//SVGアニメーションの実行
 });
 </script>
@@ -240,21 +240,21 @@ var myDate = String(myD.getDate());//日
 if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
         $("#splash").css("display", "block");//１回目はローディングを表示
         setTimeout(function () {
-            $("#splash_logo").fadeIn(1000, function () {//1000ミリ秒（1秒）かけてロゴがフェードイン
+            $("#splash_logo").fadeIn(1000, function () {
                 setTimeout(function () {
-            $("#splash_logo").fadeOut(1000);//1000ミリ秒（1秒）かけてロゴがフェードアウト
-                }, 1000);//1000ミリ秒（1秒）後に処理を実行
+            $("#splash_logo").fadeOut(1000);
+                }, 1000);
         setTimeout(function () {
-            $("#splash").fadeOut(1000, function () {//1000ミリ秒（1秒）かけて画面がフェードアウト
+            $("#splash").fadeOut(1000, function () {
             var myD = new Date();
             var myYear = String(myD.getFullYear());
             var myMonth = String(myD.getMonth() + 1);
             var myDate = String(myD.getDate());
             $.cookie('accessdate', myYear + myMonth + myDate); //accessdateキーで年月日を記録
         });
-        }, 1700);//1700ミリ秒（1.7秒）後に処理を実行
+        }, 1700);
     });
-}, 1000);//1000ミリ秒（1秒）後に処理を実行
+}, 1000);
 }else {
     $("#splash").css("display", "none");//同日2回目のアクセスでローディング画面非表示
 }
@@ -268,7 +268,7 @@ if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセス�
     particlesJS("particles-js",{
 	"particles":{
 		"number":{
-			"value":38,//この数値を変更すると幾何学模様の数が増減できる
+			"value":38,//幾何学模様の数が増減
 			"density":{
 				"enable":true,
 				"value_area":800
@@ -278,7 +278,7 @@ if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセス�
 			"value":"#ffffff"//色
 		},
 		"shape":{
-			"type":"polygon",//形状はpolygonを指定
+			"type":"polygon",//形状
 			"stroke":{
 				"width":0,
 			},
@@ -319,8 +319,8 @@ if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセス�
 		},
 		"move":{
 			"enable":true,
-			"speed":6,//この数値を小さくするとゆっくりな動きになる
-			"direction":"none",//方向指定なし
+			"speed":6,//動きになるの速さ
+			"direction":"none",//方向指定
 			"random":false,//動きはランダムにしない
 			"straight":false,//動きをとどめない
 			"out_mode":"out",//画面の外に出るように描写
