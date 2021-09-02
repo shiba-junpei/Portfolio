@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*headerアニメーション*/
+/* headerアニメーション */
 header{
     height: 100%;
 }
@@ -20,7 +20,7 @@ header{
 
 /*design.html*/
 .gallery{
-    columns: 3;/*段組みの数*/
+    columns: 3;/* 段組みの数 */
     padding:30px 15px;
     margin:0;
     }
@@ -33,7 +33,7 @@ header{
         height:auto;
         vertical-align: bottom;
     }
-    /*　横幅900px以下の段組み設定　*/
+    /* 横幅900px以下の段組み設定 */
     @media only screen and (max-width: 900px) {
         .gallery{
         columns:3;
@@ -47,7 +47,7 @@ header{
 
 
 /* LoadingのためのCSS */
-/* Loading背景画面設定　*/
+/* Loading背景画面設定 */
 #splash {
     position: fixed;
     width: 100%;
@@ -63,7 +63,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Loading アイコンの大きさ設定　*/
+/* Loading アイコンの大きさ設定 */
 #splash_logo svg{
     width:1500px;
 }

@@ -41,9 +41,9 @@
         <div id="particles-js"></div>
             <div id="wrapper">
             <nav class="header-nav">
-                <ul>
+                <ul id="page-link">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">about</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
                 </ul>
             </nav>
@@ -175,7 +175,7 @@
                 <div class="item-card">
                     <h2>デザイン集</h>
                     <div class="">
-                        <img src="img/design-html.jpg" alt="">
+                        <img src="img/design2-html.jpg" alt="">
                     </div>
                     <h3>デザイン集</h3>
                     <p>Photoshop・Illustratorを<br>
@@ -350,6 +350,20 @@ if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセス�
 });
 </script>
 <script src="js/5-4.js"></script>
+
+
+<!--ページ内リンク-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+<script>
+    $('#page-link a[href*="#"]').click(function () {
+	var elmHash = $(this).attr('href');
+	var pos = $(elmHash).offset().top;
+	$('body,html').animate({scrollTop: pos}, 600);
+	return false;
+});
+</script>
+<script src="js/8-2-1.js"></script>
 
 
 </body>
